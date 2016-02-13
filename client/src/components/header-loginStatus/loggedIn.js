@@ -24,7 +24,7 @@ export default (props)=>{
             title={<span style={styles.title}><Link to="/" className="logoLink">GIGG.TV</Link></span>}
             className="header"
             iconElementLeft={<img className="rock-it" src='../../public/img/rocket.svg' height='40' width='40' alt='' />}
-            // showMenuIconButton={false}
+
             iconElementRight={
                 <div>
                 {props.userPrivelege === 'artist' ?

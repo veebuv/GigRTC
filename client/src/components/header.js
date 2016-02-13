@@ -29,8 +29,6 @@ export class Header extends Component {
       this.state = {open: false};
     }
 
-    handleToggle = () => this.setState({open: !this.state.open});
-
     render() {
         var userName;
 
@@ -51,7 +49,7 @@ export class Header extends Component {
 
               <div>
               {this.props.isAuthenticated
-                ? <LoggedInHeader user_details={userName}
+                ? <LoggedInHeader user_details={this.props.userDetails}
                                   logoutAndRedirect={this.props.logoutAndRedirect.bind(this)}
                                   userPrivelege={this.props.userPrivelege}
                   />
